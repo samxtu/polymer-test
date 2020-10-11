@@ -48,3 +48,11 @@ Go to node\*modules/@polymer/polymer/lib/legacy/polymer-fn.js
 replace customElements.define(klass.is, /\*_ @type {!HTMLElement} _/(klass));
 
 with customElements.get(klass.is) || customElements.define(klass.is, /\*\* @type {!HTMLElement} \_/(klass));
+
+### If you have an indexedDB with name user you should edit a db version at
+
+src/my-view1.js line 147, 177
+
+src/my-view2.js line 122
+
+src/my-view3.js line 159, 193
