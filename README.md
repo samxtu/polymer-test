@@ -44,5 +44,7 @@ This command serves your app. Replace `build-folder-name` with the folder name o
 ### Possible run-time errors avoidance for non-monorepo project
 
 Go to node\*modules/@polymer/polymer/lib/legacy/polymer-fn.js
+
 replace customElements.define(klass.is, /\*_ @type {!HTMLElement} _/(klass));
+
 with customElements.get(klass.is) || customElements.define(klass.is, /\*\* @type {!HTMLElement} \_/(klass));
